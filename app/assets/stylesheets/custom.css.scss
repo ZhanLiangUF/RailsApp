@@ -94,7 +94,22 @@ footer {
       margin-left: 15px;
     }
   }
+<<<<<<< HEAD
 
+=======
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+  }
+>>>>>>> static-pages
 /* sidebar */
 
 aside {
@@ -137,6 +152,10 @@ input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
+<<<<<<< HEAD
+=======
+  @include box_sizing;
+>>>>>>> static-pages
 }
 
 input {
@@ -156,6 +175,7 @@ input {
     color: $state-danger-text;
   }
 }  
+<<<<<<< HEAD
 checkbox {
   margin-top: -10px;
   margin-bottom: 10px;
@@ -169,4 +189,6 @@ checkbox {
   width: auto;
   margin-left: 0;
 }
+=======
+>>>>>>> static-pages
 }
