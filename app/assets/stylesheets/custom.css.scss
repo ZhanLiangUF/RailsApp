@@ -94,7 +94,8 @@ footer {
       margin-left: 15px;
     }
   }
-/*sidebar*/
+
+/* sidebar */
 
 aside {
   section.user_info {
@@ -136,12 +137,11 @@ input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
+}
 
 input {
   height: auto !important;
   }
-  
-  
 #error_explanation {
   color: red;
   ul {
@@ -168,4 +168,5 @@ checkbox {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
 }
