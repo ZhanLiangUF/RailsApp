@@ -1,17 +1,19 @@
-require 'test_helper'
+ENV['RAILS_ENV'] ||= 'test'
+require File.expand_path('../../config/environment', __FILE__)
+require 'rails/test_help'
+require "minitest/reporters"
+Minitest::Reporters.use!
 
-class UserTest < ActiveSupport::TestCase
-
-  def setup
-    @user = User.new(name: "Example User", email: "user@example.com")
+class ActiveSupport::TestCase
+  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical
+  # order.
+  fixtures :all
+  include ApplicationHelper
+  
+  # Returns true if a test users is logged in.
+  def is_logged_in?
+      !session[:user_id].nil?
   end
 
-  test "should be valid" do
-    assert @user.valid?
-  end
-
-  test "name should be present" do
-    @user.name = "     "
-    assert_not @user.valid?
-  end
+  # Add more helper methods to be used by all tests here...
 end
