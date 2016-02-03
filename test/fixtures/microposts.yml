@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+Pentakill:
+  content: "I just got a pentakill"
+  created_at: <%= 10.minutes.ago %>
+  
+FizzGuidebyDev:
+  content: "Check out that fizz guide by devansh"
+  created_at: <%= 3.years.ago %>
+  
+adc_video:
+  content: "Doublelift got a solo kill on faker:https://www.youtube.com/watch?v=QS-magp02M4&ab_channel=EpicSkillshot-LoLVODLibrary"
+  created_at: <%= 2.hours.ago %>
+ 
+most_recent:
+    content: "I am bored"
+    created_at: <%= Time.zone.now %>
+  
