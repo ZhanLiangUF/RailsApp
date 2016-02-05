@@ -23,7 +23,10 @@ class User < ActiveRecord::Base
   def feed
     Micropost.where("user_id = ?", id)
   end
+<<<<<<< HEAD
 
+=======
+>>>>>>> user-microposts
   # Returns a random token.
   def User.new_token
     SecureRandom.urlsafe_base64
